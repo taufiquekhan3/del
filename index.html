@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<section>
+    <div class="circle"></div>
+    <header>
+          <img src="public/th.jpeg" alt="starbucklog" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="content-box">
+            <h2>It's not just coffee<br>it's <span>Starbucks</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsa aperiam aspernatur exercitationem necessitatibus voluptate rerum vero aut, architecto alias dolorem error optio impedit delectus nisi numquam saepe dolores veniam!</p>
+            <a href="">Learn more</a>
+        </div>
+        <div class="img-box">
+            <img src="public/th (12).jpeg" class="starbucks"> 
+        </div>
+    </div>
+        <ul class="thumb">
+            <li><img src="public/th (6).jpeg" onclick="imgslider('public/th (6).jpeg')"></li>
+            <li><img src="public/th (9).jpeg" onclick="imgslider('public/th (9).jpeg')"></li>
+            <li><img src="public/th (4).jpeg" onclick="imgslider('public/th (10).jpeg')"></li>
+        </ul>
+    </div>
+    </section>
+    <script type="text/javascript">
+        function imgslider(imagein) {
+            document.querySelector('.starbucks').src = imagein;
+        }
+    </script>
+</body>
+</html>
